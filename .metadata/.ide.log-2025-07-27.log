@@ -1,0 +1,481 @@
+2025-07-27 11:45:27,290 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2025-07-27 11:45:27,355 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2025-07-27 11:45:27,357 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2025-07-27 11:45:41,894 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2025-07-27 11:45:41,895 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2025-07-27 11:45:41,896 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2025-07-27 11:45:56,994 [INFO] WebApp:191 - Connection restablished
+2025-07-27 11:53:13,063 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-27 11:53:13,392 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-27 11:53:15,182 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 606314680 Bytes (1073741824)
+2025-07-27 11:53:17,485 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 675589608 Bytes (1073741824)
+2025-07-27 11:53:17,915 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-07-27 11:53:17,915 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-07-27 11:53:17,915 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-07-27 11:53:17,915 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: CAN
+2025-07-27 11:53:17,915 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-07-27 11:53:17,916 [INFO] CodeGenerator:892 - code generatio: config db path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2025-07-27 11:53:18,012 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp_save
+2025-07-27 11:53:18,328 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp
+2025-07-27 11:53:18,383 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp_save
+2025-07-27 11:53:18,569 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp
+2025-07-27 11:53:18,648 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c_save
+2025-07-27 11:53:18,978 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c
+2025-07-27 11:53:18,990 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h_save
+2025-07-27 11:53:19,099 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h
+2025-07-27 11:53:19,129 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c_save
+2025-07-27 11:53:19,371 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c
+2025-07-27 11:53:19,380 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp_save
+2025-07-27 11:53:19,473 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp
+2025-07-27 11:53:19,494 [INFO] CodeEngine:321 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-07-27 11:53:19,596 [INFO] CodeEngine:345 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h
+2025-07-27 11:53:19,642 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h_save
+2025-07-27 11:53:19,749 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h
+2025-07-27 11:53:19,759 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c_save
+2025-07-27 11:53:19,883 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c
+2025-07-27 11:53:20,388 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 260mS.
+2025-07-27 11:53:20,394 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-07-27 11:53:20,515 [INFO] ConfigFileManager:1595 - The Die is : DIE412
+2025-07-27 11:53:21,827 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 1433mS.
+2025-07-27 11:53:21,829 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-07-27 11:53:21,835 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-07-27 12:17:41,912 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-27 12:17:44,466 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 335951376 Bytes (1073741824)
+2025-07-27 12:17:47,999 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 404582680 Bytes (1073741824)
+2025-07-27 12:17:48,492 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-07-27 12:17:48,495 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-07-27 12:17:48,499 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-07-27 12:17:48,499 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: CAN
+2025-07-27 12:17:48,499 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-07-27 12:17:48,501 [INFO] CodeGenerator:892 - code generatio: config db path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2025-07-27 12:17:48,857 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp_save
+2025-07-27 12:17:49,010 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp
+2025-07-27 12:17:49,047 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp_save
+2025-07-27 12:17:49,199 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp
+2025-07-27 12:17:49,295 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c_save
+2025-07-27 12:17:49,780 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c
+2025-07-27 12:17:49,791 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h_save
+2025-07-27 12:17:49,895 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h
+2025-07-27 12:17:49,923 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c_save
+2025-07-27 12:17:50,092 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c
+2025-07-27 12:17:50,099 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp_save
+2025-07-27 12:17:50,176 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp
+2025-07-27 12:17:50,193 [INFO] CodeEngine:321 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-07-27 12:17:50,299 [INFO] CodeEngine:345 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h
+2025-07-27 12:17:50,341 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h_save
+2025-07-27 12:17:50,489 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h
+2025-07-27 12:17:50,499 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c_save
+2025-07-27 12:17:50,671 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c
+2025-07-27 12:17:51,272 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 256mS.
+2025-07-27 12:17:51,281 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-07-27 12:17:51,519 [INFO] ConfigFileManager:1595 - The Die is : DIE412
+2025-07-27 12:17:53,832 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 2551mS.
+2025-07-27 12:17:53,833 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-07-27 12:17:53,839 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-07-27 12:24:28,684 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-27 12:24:32,385 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 385267080 Bytes (1073741824)
+2025-07-27 12:24:35,171 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 453416952 Bytes (1073741824)
+2025-07-27 12:24:35,334 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-07-27 12:24:35,334 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-07-27 12:24:35,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-07-27 12:24:35,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: CAN
+2025-07-27 12:24:35,335 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-07-27 12:24:35,337 [INFO] CodeGenerator:892 - code generatio: config db path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2025-07-27 12:24:35,450 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp_save
+2025-07-27 12:24:35,534 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp
+2025-07-27 12:24:35,559 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp_save
+2025-07-27 12:24:35,631 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp
+2025-07-27 12:24:35,680 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c_save
+2025-07-27 12:24:35,769 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c
+2025-07-27 12:24:35,777 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h_save
+2025-07-27 12:24:35,841 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h
+2025-07-27 12:24:35,855 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c_save
+2025-07-27 12:24:35,953 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c
+2025-07-27 12:24:35,960 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp_save
+2025-07-27 12:24:36,026 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp
+2025-07-27 12:24:36,038 [INFO] CodeEngine:321 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-07-27 12:24:36,106 [INFO] CodeEngine:345 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h
+2025-07-27 12:24:36,144 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h_save
+2025-07-27 12:24:36,234 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h
+2025-07-27 12:24:36,245 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c_save
+2025-07-27 12:24:36,371 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c
+2025-07-27 12:24:36,770 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 169mS.
+2025-07-27 12:24:36,775 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-07-27 12:24:36,860 [INFO] ConfigFileManager:1595 - The Die is : DIE412
+2025-07-27 12:24:37,735 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 960mS.
+2025-07-27 12:24:37,736 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-07-27 12:24:37,742 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-07-27 12:33:05,506 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 674410176 Bytes (1073741824)
+2025-07-27 12:33:21,622 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 704818880 Bytes (1073741824)
+2025-07-27 12:33:24,823 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 737851072 Bytes (1073741824)
+2025-07-27 12:33:24,967 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-07-27 12:33:24,967 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-07-27 12:33:24,967 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-07-27 12:33:24,967 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: CAN
+2025-07-27 12:33:24,967 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-07-27 12:33:24,969 [INFO] CodeGenerator:892 - code generatio: config db path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2025-07-27 12:33:25,080 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp_save
+2025-07-27 12:33:25,159 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp
+2025-07-27 12:33:25,181 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp_save
+2025-07-27 12:33:25,248 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp
+2025-07-27 12:33:25,282 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c_save
+2025-07-27 12:33:25,346 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c
+2025-07-27 12:33:25,354 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h_save
+2025-07-27 12:33:25,413 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h
+2025-07-27 12:33:25,428 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c_save
+2025-07-27 12:33:25,525 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c
+2025-07-27 12:33:25,531 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp_save
+2025-07-27 12:33:25,590 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp
+2025-07-27 12:33:25,603 [INFO] CodeEngine:321 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-07-27 12:33:25,674 [INFO] CodeEngine:345 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h
+2025-07-27 12:33:25,698 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h_save
+2025-07-27 12:33:25,767 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h
+2025-07-27 12:33:25,775 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c_save
+2025-07-27 12:33:25,875 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c
+2025-07-27 12:33:26,283 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 175mS.
+2025-07-27 12:33:26,286 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-07-27 12:33:26,371 [INFO] ConfigFileManager:1595 - The Die is : DIE412
+2025-07-27 12:33:27,116 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 829mS.
+2025-07-27 12:33:27,116 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-07-27 12:33:27,119 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-07-27 12:35:53,361 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 881071856 Bytes (1073741824)
+2025-07-27 12:35:56,086 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 914876240 Bytes (1073741824)
+2025-07-27 12:35:56,232 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2025-07-27 12:35:56,232 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2025-07-27 12:35:56,233 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2025-07-27 12:35:56,233 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: CAN
+2025-07-27 12:35:56,233 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2025-07-27 12:35:56,234 [INFO] CodeGenerator:892 - code generatio: config db path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\
+2025-07-27 12:35:56,331 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp_save
+2025-07-27 12:35:56,407 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\license.tmp
+2025-07-27 12:35:56,429 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp_save
+2025-07-27 12:35:56,503 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\gpio.tmp
+2025-07-27 12:35:56,530 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c_save
+2025-07-27 12:35:56,605 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_it.c
+2025-07-27 12:35:56,612 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h_save
+2025-07-27 12:35:56,677 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_it.h
+2025-07-27 12:35:56,691 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c_save
+2025-07-27 12:35:56,783 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\stm32f1xx_hal_msp.c
+2025-07-27 12:35:56,788 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp_save
+2025-07-27 12:35:56,847 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\MXTmpFiles\system.tmp
+2025-07-27 12:35:56,859 [INFO] CodeEngine:321 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h_save
+2025-07-27 12:35:56,939 [INFO] CodeEngine:345 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\stm32f1xx_hal_conf.h
+2025-07-27 12:35:56,963 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h_save
+2025-07-27 12:35:57,033 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Inc\main.h
+2025-07-27 12:35:57,040 [INFO] CodeEngine:265 - oldGeneratedFile, C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c_save
+2025-07-27 12:35:57,164 [INFO] CodeEngine:289 - Generated code: C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_Normal_Mode\Core\Src\main.c
+2025-07-27 12:35:57,497 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 120mS.
+2025-07-27 12:35:57,499 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2025-07-27 12:35:57,579 [INFO] ConfigFileManager:1595 - The Die is : DIE412
+2025-07-27 12:35:58,420 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 921mS.
+2025-07-27 12:35:58,421 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2025-07-27 12:35:58,426 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.
+2025-07-27 14:02:31,680 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-07-27 15:02:46,788 [INFO] Activator:176 - 
+
+
+2025-07-27 15:02:46,790 [INFO] Activator:177 - !SESSION log4j initialized
+2025-07-27 15:02:52,323 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-07-27 15:02:53,247 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659
+2025-07-27 15:02:53,296 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/mcu/
+2025-07-27 15:02:53,296 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/plugins/boardmanager/
+2025-07-27 15:02:53,297 [WARN] ApiDb:259 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/plugins/mcufinder/images/
+2025-07-27 15:02:53,311 [INFO] ApiDb:250 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/
+2025-07-27 15:02:53,313 [INFO] DbMcusAds:125 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/
+2025-07-27 15:02:53,317 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2025-07-27 15:02:53,483 [INFO] RulesReader:64 - Compatibility file has been processed (317 Rules)
+2025-07-27 15:02:53,579 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/mcu/
+2025-07-27 15:02:53,579 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/plugins/boardmanager/
+2025-07-27 15:02:53,579 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/plugins/mcufinder/images/
+2025-07-27 15:02:53,579 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,579 [INFO] ApiDb:250 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/
+2025-07-27 15:02:53,579 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,579 [INFO] DbMcusAds:125 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/
+2025-07-27 15:02:53,579 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,579 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,580 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2025-07-27 15:02:53,662 [INFO] MainPanel:274 - HeapMemory: 268435456
+2025-07-27 15:02:53,807 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/mcu/
+2025-07-27 15:02:53,807 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/plugins/boardmanager/
+2025-07-27 15:02:53,808 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\\db\/plugins/mcufinder/images/
+2025-07-27 15:02:53,808 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,808 [INFO] ApiDb:250 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/
+2025-07-27 15:02:53,808 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,808 [INFO] DbMcusAds:125 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/
+2025-07-27 15:02:53,808 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,808 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\sopan\.stmcufinder\plugins\mcufinder/ => C:\Users\sopan\.stmcufinder\plugins\mcufinder
+2025-07-27 15:02:53,808 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/cs/
+2025-07-27 15:02:53,829 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659
+2025-07-27 15:02:53,831 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2025-07-27 15:02:53,839 [INFO] PluginManage:310 - Check plugin analytics
+2025-07-27 15:02:54,065 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
+2025-07-27 15:02:54,065 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2025-07-27 15:02:54,066 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: 
+2025-07-27 15:02:54,068 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2025-07-27 15:02:54,068 [INFO] PluginManage:310 - Check plugin cadmodel
+2025-07-27 15:02:54,075 [INFO] CADModel:105 - Init CAD model plugin
+2025-07-27 15:02:54,075 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2025-07-27 15:02:54,075 [INFO] PluginManage:310 - Check plugin clock
+2025-07-27 15:02:54,086 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2025-07-27 15:02:54,086 [INFO] PluginManage:310 - Check plugin ddr
+2025-07-27 15:02:54,089 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2025-07-27 15:02:54,090 [INFO] PluginManage:310 - Check plugin filemanager
+2025-07-27 15:02:54,254 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2025-07-27 15:02:54,254 [INFO] PluginManage:310 - Check plugin ipmanager
+2025-07-27 15:02:54,260 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2025-07-27 15:02:54,260 [INFO] PluginManage:310 - Check plugin lpbam
+2025-07-27 15:02:54,269 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2025-07-27 15:02:54,269 [INFO] PluginManage:310 - Check plugin memorymap
+2025-07-27 15:02:54,285 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2025-07-27 15:02:54,286 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2025-07-27 15:02:54,298 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2025-07-27 15:02:54,298 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2025-07-27 15:02:54,393 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2025-07-27 15:02:54,551 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2025-07-27 15:02:54,551 [INFO] PluginManage:310 - Check plugin power
+2025-07-27 15:02:54,564 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2025-07-27 15:02:54,564 [INFO] PluginManage:310 - Check plugin projectmanager
+2025-07-27 15:02:54,579 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:4)
+2025-07-27 15:02:54,580 [INFO] PluginManage:310 - Check plugin rif
+2025-07-27 15:02:54,595 [INFO] PluginManage:359 - Loaded plugin rif (category:base,tabindex:3)
+2025-07-27 15:02:54,595 [INFO] PluginManage:310 - Check plugin thirdparty
+2025-07-27 15:02:54,750 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2025-07-27 15:02:54,750 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2025-07-27 15:02:54,751 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2025-07-27 15:02:54,751 [INFO] PluginManage:310 - Check plugin tools
+2025-07-27 15:02:54,751 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2025-07-27 15:02:54,754 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2025-07-27 15:02:54,754 [INFO] PluginManage:310 - Check plugin tutovideos
+2025-07-27 15:02:54,973 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2025-07-27 15:02:54,973 [INFO] PluginManage:310 - Check plugin updater
+2025-07-27 15:02:54,993 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2025-07-27 15:02:54,993 [INFO] PluginManage:310 - Check plugin userauth
+2025-07-27 15:02:54,998 [INFO] UserAuth:118 - Init User Auth plugin
+2025-07-27 15:02:54,998 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
+2025-07-27 15:02:54,999 [INFO] PluginManage:283 - PluginManage : Loaded plugins [18]
+2025-07-27 15:02:55,208 [INFO] PinOutPanel:1589 - setPackage(No Configuration,No Configuration)
+2025-07-27 15:02:55,297 [INFO] CADModel:165 - CPN selected for project level
+2025-07-27 15:02:55,297 [INFO] CADModel:114 - Register for checkConnection events
+2025-07-27 15:02:55,316 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,317 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2025-07-27 15:02:55,320 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,320 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2025-07-27 15:02:55,324 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,324 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2025-07-27 15:02:55,327 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,327 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2025-07-27 15:02:55,330 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,330 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2025-07-27 15:02:55,334 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,334 [INFO] PluginManager:220 - loadIPPluginJar : add ddr_ctrl_phy
+2025-07-27 15:02:55,337 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,337 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2025-07-27 15:02:55,343 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,344 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2025-07-27 15:02:55,347 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,347 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2025-07-27 15:02:55,350 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,350 [INFO] PluginManager:220 - loadIPPluginJar : add extmemmanager
+2025-07-27 15:02:55,351 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,351 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2025-07-27 15:02:55,356 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,356 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2025-07-27 15:02:55,364 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,364 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2025-07-27 15:02:55,366 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,366 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2025-07-27 15:02:55,369 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,369 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2025-07-27 15:02:55,375 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,376 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2025-07-27 15:02:55,381 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,381 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2025-07-27 15:02:55,385 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,385 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2025-07-27 15:02:55,389 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,389 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2025-07-27 15:02:55,392 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,393 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2025-07-27 15:02:55,396 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,396 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2025-07-27 15:02:55,400 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,400 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2025-07-27 15:02:55,405 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,405 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2025-07-27 15:02:55,413 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,414 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2025-07-27 15:02:55,418 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,418 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2025-07-27 15:02:55,420 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,420 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2025-07-27 15:02:55,426 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,426 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2025-07-27 15:02:55,431 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,431 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2025-07-27 15:02:55,435 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,435 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2025-07-27 15:02:55,438 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,438 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2025-07-27 15:02:55,441 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,441 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2025-07-27 15:02:55,448 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,450 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2025-07-27 15:02:55,452 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,452 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2025-07-27 15:02:55,454 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,455 [INFO] PluginManager:220 - loadIPPluginJar : add radio
+2025-07-27 15:02:55,459 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,459 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2025-07-27 15:02:55,463 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,463 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2025-07-27 15:02:55,466 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,466 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2025-07-27 15:02:55,473 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,473 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2025-07-27 15:02:55,475 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,476 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2025-07-27 15:02:55,479 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,480 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2025-07-27 15:02:55,482 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,483 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2025-07-27 15:02:55,486 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,486 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2025-07-27 15:02:55,488 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,488 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2025-07-27 15:02:55,491 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,491 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2025-07-27 15:02:55,494 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,495 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2025-07-27 15:02:55,498 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2025-07-27 15:02:55,498 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2025-07-27 15:02:55,617 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,648 [INFO] RulesReader:64 - Compatibility file has been processed (317 Rules)
+2025-07-27 15:02:55,664 [INFO] RulesReader:64 - Compatibility file has been processed (317 Rules)
+2025-07-27 15:02:55,671 [INFO] CADModel:165 - CPN selected for project level
+2025-07-27 15:02:55,671 [INFO] CADModel:114 - Register for checkConnection events
+2025-07-27 15:02:55,671 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,671 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2025-07-27 15:02:55,817 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,819 [INFO] CADModel:165 - CPN selected for project level
+2025-07-27 15:02:55,820 [INFO] CADModel:114 - Register for checkConnection events
+2025-07-27 15:02:55,820 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,820 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2025-07-27 15:02:55,823 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,923 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,927 [INFO] DbMcusAds:53 - JSON generation date=Tue Jul 08 13:44:23 IST 2025 (1751962463562)
+2025-07-27 15:02:55,927 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:55,960 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2025-07-27 15:02:56,053 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:56,056 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:56,056 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:56,056 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2025-07-27 15:02:56,058 [FATAL] Updater:351 - Updater called before beeing initialized
+2025-07-27 15:02:56,125 [ERROR] Updater:1198 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2025-07-27 15:02:56,128 [INFO] Updater:1134 - Updater Version found : 6.15.0
+2025-07-27 15:02:56,147 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659
+2025-07-27 15:02:56,458 [INFO] MainUpdater:2872 - connection check result : 10
+2025-07-27 15:02:56,458 [INFO] MainUpdater:289 - Updater Check For Update Now.
+2025-07-27 15:02:56,458 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.150
+2025-07-27 15:02:56,469 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2025-07-27 15:02:56,470 [INFO] UserAuth:487 - Internet connection configuration mode: 1
+2025-07-27 15:02:56,504 [INFO] JxBrowserEngine:152 - Initiate JxBrowser Engine with user profile folder
+2025-07-27 15:02:56,644 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2025-07-27 15:02:57,416 [INFO] WebApp:169 - Instantiating new browser for Auth
+2025-07-27 15:02:58,072 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.4.0
+2025-07-27 15:02:58,081 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.2
+2025-07-27 15:02:58,089 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2025-07-27 15:02:58,094 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ST60.1.0.0
+2025-07-27 15:02:58,128 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2025-07-27 15:02:58,162 [WARN] PackLoader:240 - Cannot read IP mode file for Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.7.1
+2025-07-27 15:02:58,224 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.4.0
+2025-07-27 15:02:58,249 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2025-07-27 15:02:58,265 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC10.1.0.0
+2025-07-27 15:02:58,276 [WARN] PackLoader:240 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.3.0
+2025-07-27 15:02:58,283 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
+2025-07-27 15:02:58,288 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.1.0
+2025-07-27 15:02:58,305 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2025-07-27 15:02:58,307 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2025-07-27 15:02:58,308 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2025-07-27 15:02:58,309 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2025-07-27 15:02:58,310 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2025-07-27 15:02:58,318 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.2.0.0
+2025-07-27 15:02:58,326 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.5.0.0
+2025-07-27 15:02:58,336 [WARN] PackLoader:240 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2025-07-27 15:02:58,344 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2025-07-27 15:02:58,352 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC9.1.0.0
+2025-07-27 15:02:58,360 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.8.0
+2025-07-27 15:02:58,375 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.1.0
+2025-07-27 15:02:58,382 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfMQTT.1.19.2
+2025-07-27 15:02:58,392 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.5.2.0
+2025-07-27 15:02:58,401 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.10.1.0
+2025-07-27 15:02:58,431 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2025-07-27 15:02:58,444 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SAFEA1.1.2.2
+2025-07-27 15:02:58,457 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2025-07-27 15:02:58,471 [WARN] PackLoader:240 - Cannot read IP mode file for EmbeddedOffice.I-CUBE-FS-RTOS.1.0.1
+2025-07-27 15:02:58,483 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-WB05N.2.0.0
+2025-07-27 15:02:58,492 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfTPM.3.8.0
+2025-07-27 15:02:58,504 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TCPP.4.2.0
+2025-07-27 15:02:58,514 [WARN] PackLoader:240 - Cannot read IP mode file for RealThread.X-CUBE-RT-Thread_Nano.4.1.1
+2025-07-27 15:02:58,520 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2025-07-27 15:02:58,528 [WARN] PackLoader:240 - Cannot read IP mode file for ITTIA_DB.I-CUBE-ITTIADB.8.9.0
+2025-07-27 15:02:58,535 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ST67W61.1.0.0
+2025-07-27 15:02:58,539 [INFO] WebApp:463 - Apply proxy settings
+2025-07-27 15:02:58,541 [INFO] WebApp:548 - Chromium requires no authentication
+2025-07-27 15:02:58,570 [WARN] PackLoader:240 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2025-07-27 15:02:58,608 [INFO] WebApp:491 - Direct internet connection detected
+2025-07-27 15:02:58,631 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.4.0
+2025-07-27 15:02:58,684 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.11.3.0
+2025-07-27 15:02:58,707 [INFO] WebApp:900 - Register for checkConnection events
+2025-07-27 15:02:58,707 [INFO] WebApp:463 - Apply proxy settings
+2025-07-27 15:02:58,707 [INFO] WebApp:548 - Chromium requires no authentication
+2025-07-27 15:02:58,708 [INFO] WebApp:491 - Direct internet connection detected
+2025-07-27 15:02:58,860 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-PM33A1.1.0.0
+2025-07-27 15:02:58,881 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2025-07-27 15:02:58,890 [WARN] PackLoader:240 - Cannot read IP mode file for Avnet-IotConnect.X-CUBE-IoTC-DA16k-PMOD.1.0.0
+2025-07-27 15:02:58,903 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.1.0
+2025-07-27 15:02:58,911 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC12.1.0.0
+2025-07-27 15:02:58,968 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.2.0.0
+2025-07-27 15:02:58,982 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.1.0
+2025-07-27 15:02:58,996 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.3.1
+2025-07-27 15:02:59,002 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-STAIOTCFT.1.0.0
+2025-07-27 15:02:59,010 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DPower.1.3.0
+2025-07-27 15:02:59,029 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2025-07-27 15:02:59,029 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.2.0.0
+2025-07-27 15:02:59,031 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2025-07-27 15:02:59,031 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2025-07-27 15:02:59,032 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2025-07-27 15:02:59,040 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2025-07-27 15:02:59,051 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.4.1.0
+2025-07-27 15:02:59,069 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,069 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,070 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.2.0.0
+2025-07-27 15:02:59,072 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,072 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,072 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,072 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,072 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2025-07-27 15:02:59,079 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.7.0.1
+2025-07-27 15:02:59,085 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.25.0
+2025-07-27 15:02:59,092 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-STBOX1.2.0.0
+2025-07-27 15:02:59,102 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : Cortex-A Device cause : null
+2025-07-27 15:02:59,112 [INFO] WebApp:191 - Connection restablished
+2025-07-27 15:02:59,120 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : Cortex-A Device cause : null
+2025-07-27 15:02:59,121 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : Cortex-A Device cause : null
+2025-07-27 15:02:59,121 [WARN] ConditionMgr:1044 - genDependencies : Invalid condition id : Cortex-A Device cause : null
+2025-07-27 15:02:59,137 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2025-07-27 15:02:59,168 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7RS.1.1.0
+2025-07-27 15:02:59,177 [WARN] PackLoader:240 - Cannot read IP mode file for Cesanta.I-CUBE-Mongoose.7.13.0
+2025-07-27 15:02:59,193 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.2.0.0
+2025-07-27 15:02:59,200 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSH.1.4.20
+2025-07-27 15:02:59,206 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.2.0.0
+2025-07-27 15:02:59,220 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-IPS.3.1.0
+2025-07-27 15:02:59,231 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.2
+2025-07-27 15:02:59,237 [WARN] PackLoader:240 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2025-07-27 15:02:59,245 [INFO] WebApp:225 - Starting web application
+2025-07-27 15:02:59,245 [INFO] WebApp:593 - Web application path used C:\ST\STM32CubeIDE_1.19.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.15.0.202507011659\db\plugins\mcufinder\reactClient1\index.html
+2025-07-27 15:02:59,253 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.4.3
+2025-07-27 15:02:59,267 [INFO] ThirdParty:978 - Integrity check success = true
+2025-07-27 15:02:59,267 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2025-07-27 15:02:59,267 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2025-07-27 15:02:59,668 [INFO] UserAuth:487 - Internet connection configuration mode: 1
+2025-07-27 15:03:05,982 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

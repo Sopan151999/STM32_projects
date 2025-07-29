@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CAN/CAN_ONLY1.ioc&apos; to &apos;CAN.ioc&apos;" description="Rename resource &apos;CAN_ONLY1.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="CAN_ONLY1.ioc" name="CAN.ioc" stamp="1753289141845" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+2025-07-23 00:05:44,115 [INFO] Gpio:278 - dependency for GPIO [CAN, RCC, SYS]
+2025-07-23 00:06:51,408 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-07-23 00:51:30,537 [INFO] Gpio:278 - dependency for GPIO [CAN, RCC, SYS]
+2025-07-23 00:51:39,275 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]

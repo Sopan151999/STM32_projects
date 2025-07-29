@@ -1,0 +1,16 @@
+20:10:12 **** Incremental Build of configuration Debug for project CAN_26_7_2025 ****
+make -j8 all 
+arm-none-eabi-gcc -o "CAN_26_7_2025.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\CAN_26_7_2025\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CAN_26_7_2025.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CAN_26_7_2025.elf
+ 
+arm-none-eabi-size  CAN_26_7_2025.elf 
+arm-none-eabi-objdump -h -S CAN_26_7_2025.elf  > "CAN_26_7_2025.list"
+   text	   data	    bss	    dec	    hex	filename
+   6560	     12	   1644	   8216	   2018	CAN_26_7_2025.elf
+Finished building: default.size.stdout
+ 
+Finished building: CAN_26_7_2025.list
+ 
+
+20:10:14 Build Finished. 0 errors, 0 warnings. (took 2s.221ms)
+

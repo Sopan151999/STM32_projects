@@ -1,0 +1,14 @@
+2025-07-25 21:31:18,649 [INFO] WebApp:194 - Connection lost
+2025-07-25 21:31:25,302 [INFO] WebAppUi:1100 - Web application message: Reloading CAD
+2025-07-25 21:31:27,462 [INFO] WebApp:191 - Connection restablished
+2025-07-25 21:31:31,085 [INFO] WebAppUi:1100 - Web application message: EDA models in Dual mode
+2025-07-25 21:31:32,835 [INFO] WebAppUi:1100 - Web application message: Token has expired
+2025-07-25 21:31:32,850 [INFO] WebAppUi:1100 - Web application message: [UlApiManager component] Connecting to SSO
+2025-07-25 21:31:33,872 [INFO] WebAppUi:1100 - Web application message: [UlApiManager component] Connected to Ultra Librarian SSO
+2025-07-25 21:31:36,810 [INFO] WebAppUi:938 - Path where api_config.json is located C:\Users\sopan\.stmcufinder\plugins\mcufinder//mcu/api_config.json
+2025-07-25 21:31:36,822 [INFO] WebAppUi:939 - Setting api config in window object
+2025-07-25 21:31:37,431 [INFO] WebAppUi:947 - Path where cad_preferences.json is located C:\Users\sopan/.stm32cubeide/
+2025-07-25 21:31:37,437 [INFO] WebAppUi:948 - Setting consent info in window object
+2025-07-25 21:31:38,298 [INFO] WebAppUi:1100 - Web application message: THREE.WebGLRenderer 101
+2025-07-25 21:33:11,205 [INFO] WebApp:194 - Connection lost
+2025-07-25 21:33:11,512 [INFO] WebApp:191 - Connection restablished
