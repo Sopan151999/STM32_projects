@@ -63,9 +63,20 @@ uint32_t TxMailBox;
 
 uint8_t TxData[8];
 uint8_t RxData[8];
+volatile uint8_t recivedbyte;
 
 void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan){
 	HAL_CAN_GetRxMessage(hcan,CAN_RX_FIFO1, &RxHeader, RxData);
+	if(RxHeader.StdId==0x500){
+		recivedbyte=RxData[0];
+	}
+
+	if(RxHeader.StdId==0x500){
+		HAL_CAN_AddTxMessage(hcan,&RxHeader, RxData, &TxMailBox);
+		}
+	if(RxHeader.StdId==0x102){
+			HAL_CAN_AddTxMessage(hcan,&RxHeader, RxData, &TxMailBox);
+			}
 }
 
 
@@ -132,9 +143,11 @@ HAL_CAN_AddTxMessage(&hcan,&TxHeader, TxData, &TxMailBox);
 
     /* USER CODE BEGIN 3 */
 	  HAL_CAN_AddTxMessage(&hcan,&TxHeader, TxData, &TxMailBox);
+
 	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-	  TxData[0]=count++;
+	  TxData[0]=recivedbyte;
 	  HAL_Delay(100);
+
   }
   /* USER CODE END 3 */
 }
@@ -225,9 +238,6 @@ canfilterconfig.FilterScale = CAN_FILTERSCALE_32BIT;
 canfilterconfig.SlaveStartFilterBank = 0;  // how many filters to assign to the CAN1 (master can)
 
 HAL_CAN_ConfigFilter(&hcan, &canfilterconfig);
-
-
-
 
 
   /* USER CODE END CAN_Init 2 */

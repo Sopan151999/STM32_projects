@@ -1,0 +1,24 @@
+/*
+ * Hdl_GPIO.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+#include<Hdl_GPIO.h>
+
+
+
+void Handle_gpio_PA5_SET(void){
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+}
+void Handle_gpio_PA5_RESET(void){
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+}
+void Handle_gpio_PA5_toggle(void){
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+}
+
+uint8_t Hangle_gpio_PA4_read(void){
+	return HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4);
+}
+

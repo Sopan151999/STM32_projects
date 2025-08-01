@@ -1,0 +1,10 @@
+00:32:42 **** Incremental Build of configuration Debug for project STM32F103C6T6A_GPIO ****
+make -j8 all 
+arm-none-eabi-size  STM32F103C6T6A_GPIO.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4684	     12	   1572	   6268	   187c	STM32F103C6T6A_GPIO.elf
+Finished building: default.size.stdout
+ 
+
+00:32:42 Build Finished. 0 errors, 0 warnings. (took 212ms)
+
