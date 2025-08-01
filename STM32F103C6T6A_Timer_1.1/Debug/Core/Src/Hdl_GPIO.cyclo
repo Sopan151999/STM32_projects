@@ -1,0 +1,4 @@
+../Core/Src/Hdl_GPIO.c:11:6:Handle_gpio_PA5_SET	1
+../Core/Src/Hdl_GPIO.c:14:6:Handle_gpio_PA5_RESET	1
+../Core/Src/Hdl_GPIO.c:17:6:Handle_gpio_PA5_toggle	1
+../Core/Src/Hdl_GPIO.c:21:9:Handle_gpio_PA4_read	1
