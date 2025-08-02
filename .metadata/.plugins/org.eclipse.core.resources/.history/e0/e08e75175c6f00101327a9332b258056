@@ -1,0 +1,11 @@
+/*
+ * Hdl_Timer.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+/* handle PWM Duty cycle */
+
+void handle_PWM_duty(uint16_t duty){
+	HAL_TIM_PWM_Start(htim, Channel)
+}

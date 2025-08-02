@@ -1,0 +1,27 @@
+/*
+ * ApplicationControl.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+
+#include "stm32f1xx_hal.h"
+#include <GBL_declare.h>
+
+
+void ApplicationControl(void){
+
+Handle_start_pwm();
+HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
+	while(1){
+//		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+
+		HAL_Delay(1000);
+		handle_PWM_duty(50);
+		Handle_LED_Toggle();
+
+	}
+
+
+
+}

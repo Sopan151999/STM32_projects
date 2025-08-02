@@ -1,0 +1,18 @@
+/*
+ * Hdl_Timer.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+/* handle PWM Duty cycle */
+#include <GBL_declare.h>
+
+void Handle_start_pwm(void){
+	HAL_TIM_PWM_Init(&htim2);
+	HAL_TIM_PWM_Start(&htim2, TIM_Channel_3);
+}
+/* pin PA2 Tim2 Channel 3*/
+void handle_PWM_duty(uint16_t duty){
+
+	TIM1->CCR1= duty;
+}

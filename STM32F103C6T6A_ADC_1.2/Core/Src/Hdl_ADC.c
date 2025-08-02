@@ -1,0 +1,27 @@
+/*
+ * Hdl_ADC.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+
+#include <GBL_declare.h>
+
+extern ADC_HandleTypeDef hadc1;
+
+
+void Handle_start_ADC(void){
+
+	HAL_ADC_Start(&hadc1);
+
+}
+
+uint16_t Handle_result_ADC(void){
+
+	HAL_ADC_ConfigChannel(&hadc1,ADC_CHANNEL_0);
+	 HAL_ADC_Start(&hadc1);
+	HAL_ADC_PollForConversion(&hadc1,2);
+
+	return HAL_ADC_GetValue(&hadc1);
+}
+

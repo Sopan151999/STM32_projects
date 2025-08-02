@@ -1,0 +1,58 @@
+/*
+ * ApplicationControl.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+
+#include "stm32f1xx_hal.h"
+#include <GBL_declare.h>
+
+extern UART_HandleTypeDef huart1;
+volatile uint16_t ADC_count =0;
+char snum[5];
+
+uint8_t MSG[35] = {'\0'};
+
+void ApplicationControl(void){
+
+SSD1306_Init();
+Handle_start_ADC();
+Handle_start_pwm();
+HAL_UART_Init(&huart1);
+
+HAL_UART_Transmit(&huart1,(const uint8_t *)"sopan", 10,100);
+
+
+  SSD1306_GotoXY (0,0);
+  SSD1306_Puts ("SOPAN", &Font_11x18, 1);
+  SSD1306_GotoXY (0, 30);
+  SSD1306_Puts ("DHAYE", &Font_11x18, 1);
+  SSD1306_UpdateScreen();
+  HAL_Delay (1000);
+  SSD1306_Clear();
+
+
+	while(1){
+//		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+
+//		HAL_Delay(5000);
+		handle_PWM_duty((ADC_count * 999) / 4095);
+		Handle_LED_Toggle();
+		ADC_count = Handle_result_ADC();
+		itoa(ADC_count, snum,10);
+
+		SSD1306_GotoXY(0, 0);
+		SSD1306_Puts("DHAYE", &Font_11x18, 1);
+		SSD1306_GotoXY(0, 30);
+		SSD1306_Puts("     ", &Font_16x26, 1);  // Print spaces to erase old number
+		SSD1306_GotoXY(0, 30);
+		SSD1306_Puts(snum, &Font_16x26, 1);
+		Handle_UART_Print("%d/r/n",ADC_count);
+		 SSD1306_UpdateScreen();
+
+	}
+
+
+
+}

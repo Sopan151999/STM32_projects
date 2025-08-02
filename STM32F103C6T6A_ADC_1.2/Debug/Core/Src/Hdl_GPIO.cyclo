@@ -1,0 +1,4 @@
+../Core/Src/Hdl_GPIO.c:12:6:Handle_LED_RESET	1
+../Core/Src/Hdl_GPIO.c:16:6:Handle_LED_SET	1
+../Core/Src/Hdl_GPIO.c:20:6:Handle_LED_Toggle	1
+../Core/Src/Hdl_GPIO.c:26:9:Handle_Read_pin	1

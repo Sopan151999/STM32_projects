@@ -1,0 +1,51 @@
+/*
+ * ApplicationControl.c
+ *
+ *  Created on: Aug 2, 2025
+ *      Author: sopan
+ */
+
+#include "stm32f1xx_hal.h"
+#include <GBL_declare.h>
+
+volatile uint16_t ADC_count =0;
+char snum[5];
+
+void ApplicationControl(void){
+
+SSD1306_Init();
+Handle_start_ADC();
+Handle_start_pwm();
+
+
+
+
+
+  SSD1306_GotoXY (0,0);
+  SSD1306_Puts ("SOPAN", &Font_11x18, 1);
+  SSD1306_GotoXY (0, 30);
+  SSD1306_Puts ("DHAYE", &Font_11x18, 1);
+  SSD1306_UpdateScreen();
+  HAL_Delay (1000);
+
+
+	while(1){
+//		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+
+//		HAL_Delay(5000);
+		handle_PWM_duty(50);
+		Handle_LED_Toggle();
+		ADC_count = Handle_result_ADC();
+		itoa(ADC_count, snum,10);
+		SSD1306_GotoXY (0,0);
+		SSD1306_Puts ("DHAYE", &Font_11x18, 1);
+		SSD1306_GotoXY (0, 30);
+		SSD1306_Puts (snum, &Font_16x26, 1);
+		SSD1306_UpdateScreen();
+		HAL_Delay (1000);
+
+	}
+
+
+
+}
