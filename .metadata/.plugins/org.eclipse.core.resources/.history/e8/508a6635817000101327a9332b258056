@@ -1,0 +1,69 @@
+/*
+ * Hdl_CAN.c
+ *
+ *  Created on: Aug 3, 2025
+ *      Author: sopan
+ */
+
+
+#include <GBL_declare.h>
+
+
+#include "stm32f1xx_hal.h"
+
+
+extern CAN_HandleTypeDef hcan;
+
+#define CAN_ID_110 0x110U
+#define CAN_ID_111 0x111U
+#define CAN_ID_112 0x112U
+
+
+CAN_RxHeaderTypeDef RxHeader;
+CAN_TxHeaderTypeDef TxHeader;
+
+uint32_t TxMailBox;
+
+uint8_t TxData[8];
+uint8_t RxData[8];
+
+volatile uint8_t recivedbyte;
+
+void CAN_Init(void) {
+    // Set up CAN TX Header
+    TxHeader.IDE = CAN_ID_STD;
+    TxHeader.StdId = 0x103;
+    TxHeader.RTR = CAN_RTR_DATA;
+    TxHeader.DLC = 8;
+
+    // Prepare TX data
+    TxData[0] = 50;
+    TxData[1] = 0xAA;
+    TxData[2] = 50;
+    TxData[3] = 0xAA;
+    TxData[4] = 50;
+    TxData[5] = 0xAA;
+    TxData[6] = 50;
+    TxData[7] = 0xAA;
+}
+
+
+
+volatile uint8_t recivedbyte;
+
+//void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan){
+//	HAL_CAN_GetRxMessage(hcan,CAN_RX_FIFO1, &RxHeader, RxData);
+//	if(RxHeader.StdId==0x500){
+//		recivedbyte=RxData[0];
+//	}
+//
+//
+//}
+//
+//void Handle_start_CAN(void){
+//
+//	HAL_CAN_Start(&hcan);
+//
+//	HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
+//}
+

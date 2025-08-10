@@ -1,0 +1,96 @@
+/*
+ * Hdl_CAN.c
+ *
+ *  Created on: Aug 5, 2025
+ *      Author: sopan
+ */
+
+
+#include "Hdl_CAN.h"
+
+// Global variables
+CAN_TxHeaderTypeDef TxHeader;
+CAN_RxHeaderTypeDef RxHeader;
+uint8_t TxData[8];
+uint8_t RxData[8];
+uint32_t TxMailbox;
+volatile uint8_t CAN_MessageReceived = 0;
+
+extern CAN_HandleTypeDef hcan;
+
+// === CAN Initialization ===
+void CAN_Init(void)
+{
+    HAL_CAN_Start(&hcan);
+    HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
+    CAN_ConfigFilter();
+}
+
+// === CAN Filter Configuration ===
+void CAN_ConfigFilter(void)
+{
+    CAN_FilterTypeDef filter;
+
+    filter.FilterActivation = CAN_FILTER_ENABLE;
+    filter.FilterBank = 10;
+    filter.FilterFIFOAssignment = CAN_FILTER_FIFO1;
+    filter.FilterIdHigh = 0x0000;
+    filter.FilterIdLow = 0x0000;
+    filter.FilterMaskIdHigh = 0x0000;
+    filter.FilterMaskIdLow = 0x0000;
+    filter.FilterMode = CAN_FILTERMODE_IDMASK;
+    filter.FilterScale = CAN_FILTERSCALE_32BIT;
+    filter.SlaveStartFilterBank = 0;
+
+    HAL_CAN_ConfigFilter(&hcan, &filter);
+}
+
+// === CAN Send Function ===
+HAL_StatusTypeDef CAN_Send(uint16_t StdID, uint8_t* data, uint8_t len)
+{
+    TxHeader.StdId = StdID;
+    TxHeader.IDE = CAN_ID_STD;
+    TxHeader.RTR = CAN_RTR_DATA;
+    TxHeader.DLC = len;
+
+    return HAL_CAN_AddTxMessage(&hcan, &TxHeader, data, &TxMailbox);
+}
+
+
+
+//void Handle_CAN_TX(void){
+//    uint16_t lclmsgLen[15]   ={0x500U,0x501U,0x502U,0x503U,0x580U,0x581U,
+//                             0x588U,0x589U,0x58AU,0x190U,0x191U,0x192U,
+//							 0x193U,0x194U,0x195U};
+//    uint8_t msg[8] = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
+//
+//	for(uint8_t lclCnt=0; lclCnt<lclmsgLen[15]; lclCnt++){
+//
+//        CAN_Send(lclmsgLen[lclCnt], msg, 8);
+//        HAL_Delay(100);
+//
+//	}
+//}
+void Handle_CAN_TX(void)
+{
+    uint16_t lclmsgLen[15] = {
+        0x500U, 0x501U, 0x502U, 0x503U, 0x580U, 0x581U,
+        0x588U, 0x589U, 0x58AU, 0x190U, 0x191U, 0x192U,
+        0x193U, 0x194U, 0x195U
+    };
+
+    uint8_t msg[8] = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
+
+    for (uint8_t lclCnt = 0; lclCnt < 15; lclCnt++)
+    {
+        CAN_Send(lclmsgLen[lclCnt], msg, 8);
+        HAL_Delay(10);
+    }
+}
+
+// === CAN RX Callback ===
+void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+    HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData);
+    CAN_MessageReceived = 1;  // Flag set for main loop
+}

@@ -1,0 +1,18 @@
+10:52:00 **** Incremental Build of configuration Debug for project STM32F103C6T6A_CAN_1.3 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc -o "STM32F103C6T6A_CAN_1.3.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\sopan\STM32CubeIDE\workspace_1.19.0\STM32F103C6T6A_CAN_1.3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F103C6T6A_CAN_1.3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F103C6T6A_CAN_1.3.elf
+ 
+arm-none-eabi-size  STM32F103C6T6A_CAN_1.3.elf 
+arm-none-eabi-objdump -h -S STM32F103C6T6A_CAN_1.3.elf  > "STM32F103C6T6A_CAN_1.3.list"
+   text	   data	    bss	    dec	    hex	filename
+  11800	     12	   1684	  13496	   34b8	STM32F103C6T6A_CAN_1.3.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32F103C6T6A_CAN_1.3.list
+ 
+
+10:52:02 Build Finished. 0 errors, 0 warnings. (took 1s.329ms)
+

@@ -1,0 +1,61 @@
+/*
+ * globel_data.h
+ *
+ *  Created on: Aug 6, 2025
+ *      Author: sopan
+ */
+
+#ifndef INC_GLOBEL_DATA_H_
+#define INC_GLOBEL_DATA_H_
+
+
+typedef struct STM_CAN_0x600 {
+	uint8_t PA5_led : 1;
+	uint8_t PA6_led : 1;
+	uint8_t data1   : 1;
+	uint8_t data2   : 1;
+	uint8_t data3   : 1;
+	uint8_t data4   : 1;
+	uint8_t data5   : 1;
+	uint8_t data6   : 1;
+	uint8_t ADC_data   ;
+	uint16_t PWM_data;
+	uint16_t plm_data;
+
+};
+extern STM_CAN_0x600 STM_Msg_0x600;
+
+
+typedef struct STM_CAN_0x801{
+	uint8_t Anurag_age;
+	uint8_t Anurag_marks;
+	uint16_t AnuragPhNo5Dig;
+	uint16_t AnuragPhNo5Dig;
+	uint16_t AnuragID;
+};
+extern STM_CAN_0x801 STM_Msg_0x801;
+
+
+
+typedef struct STM_CAN_0x102{
+	uint64_t myPhoneNo;
+};
+extern STM_CAN_0x102 STM_Msg_0x102;
+
+typedef struct STM_CAN_0x403{
+	uint32_t MyPasswoard;
+	uint32_t MyID;
+};
+extern STM_CAN_0x403 STM_Msg_0x403;
+
+typedef struct BUSMas_CAN_0x550{
+	uint32_t PrashantPhNo;
+	uint32_t PrashantID;
+};
+extern STM_CAN_0x550 STM_Msg_0x550;
+
+//#define STM_ID_0x561 0x561U
+//#define STM_ID_0x588 0x588U
+//#define STM_ID_0x589 0x589U
+//#define STM_ID_0x581 0x581U
+#endif /* INC_GLOBEL_DATA_H_ */

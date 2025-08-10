@@ -30,7 +30,7 @@ Core/Src/Hdl_Timer.o: ../Core/Src/Hdl_Timer.c ../Core/Inc/GBL_declare.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/Hdl_Timer.h ../Core/Inc/Hdl_ADC.h ../Core/Inc/fonts.h \
- ../Core/Inc/SSD_1306.h ../Core/Inc/Hdl_uart.h
+ ../Core/Inc/SSD_1306.h ../Core/Inc/Hdl_uart.h ../Core/Inc/Hdl_CAN.h
 ../Core/Inc/GBL_declare.h:
 ../Core/Inc/Hdl_GPIO.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -67,3 +67,4 @@ Core/Src/Hdl_Timer.o: ../Core/Src/Hdl_Timer.c ../Core/Inc/GBL_declare.h \
 ../Core/Inc/fonts.h:
 ../Core/Inc/SSD_1306.h:
 ../Core/Inc/Hdl_uart.h:
+../Core/Inc/Hdl_CAN.h:

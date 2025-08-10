@@ -14,4 +14,5 @@
 #include "fonts.h"
 #include "SSD_1306.h"
 #include <Hdl_uart.h>
+#include <Hdl_CAN.h>
 #endif /* INC_GBL_DECLARE_H_ */

@@ -1,5 +1,6 @@
 "./Core/Src/ApplicationControl.o"
 "./Core/Src/Hdl_ADC.o"
+"./Core/Src/Hdl_CAN.o"
 "./Core/Src/Hdl_GPIO.o"
 "./Core/Src/Hdl_Timer.o"
 "./Core/Src/Hdl_uart.o"

@@ -3,6 +3,10 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="ADC_channel"/>
+		<item value="DC_channels"/>
+		<item value="sConfig"/>
+		<item value="TIM_HandleTypeDef"/>
 		<item value="CAN_IT_RX_FIFO0_MSG_PENDING"/>
 		<item value="ActiveITs"/>
 		<item value="CAN_Interrupts"/>

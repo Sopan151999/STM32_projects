@@ -1,0 +1,29 @@
+/*
+ * Hdl_CAN.h
+ *
+ *  Created on: Aug 5, 2025
+ *      Author: sopan
+ */
+
+#ifndef INC_HDL_CAN_H_
+#define INC_HDL_CAN_H_
+
+
+#include "stm32f1xx_hal.h"
+
+// === Global Variables ===
+extern CAN_HandleTypeDef hcan;
+extern CAN_TxHeaderTypeDef TxHeader;
+extern CAN_RxHeaderTypeDef RxHeader;
+extern uint8_t TxData[8];
+extern uint8_t RxData[8];
+extern uint32_t TxMailbox;
+extern volatile uint8_t CAN_MessageReceived;
+
+// === Function Prototypes ===
+void CAN_Init(void);
+void CAN_ConfigFilter(void);
+HAL_StatusTypeDef CAN_Send(uint16_t StdID, uint8_t* data, uint8_t len);
+
+
+#endif /* INC_HDL_CAN_H_ */
