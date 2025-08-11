@@ -14,10 +14,11 @@
 
 
 STM_CAN_0x600 STM_Msg_0x600;
-STM_CAN_0x801 STM_Msg_0x801;
+STM_CAN_0x201 STM_Msg_0x201;
 STM_CAN_0x102 STM_Msg_0x102;
 STM_CAN_0x403 STM_Msg_0x403;
-STM_CAN_0x550 STM_Msg_0x550;
+STM_CAN_0x301 STM_Msg_0x301;
+
 
 // Global variables
 CAN_TxHeaderTypeDef TxHeader;
@@ -95,6 +96,7 @@ void Handle_CAN_TX(void)
 	uint8_t lcldata8t=0;
 	uint16_t lcldata16;
 //	uint32_t lcldata32;
+	uint64_t lcldata64;
 
     uint8_t msg[8] = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
 
@@ -108,6 +110,7 @@ void Handle_CAN_TX(void)
 		    switch (lclCnt) {
 		        case 1:
 		        	lclTxHeader.StdId = STM_ID_0x600;
+		        	lclTxHeader.DLC = 6;
 		            // Fill from struct STM_CAN_0x600
 		        	lcldata8t = ((STM_Msg_0x600.PA5_led & 0x01)<<0x00)|lcldata8t;
 		        	lcldata8t = ((STM_Msg_0x600.PA6_led & 0x01)<<0x01)|lcldata8t;
@@ -138,11 +141,45 @@ void Handle_CAN_TX(void)
 		        break;
 
 				case 2:
+					lclTxHeader.DLC = 8;
+					lclTxHeader.StdId=STM_ID_0x201;
 
+					msg[0] = STM_Msg_0x201.Anurag_age;
+					msg[1] = STM_Msg_0x201.Anurag_marks;
+
+					lcldata16 = STM_Msg_0x201.AnuragPhNo5Dig;
+					msg[2]	  = lcldata16;
+					msg[3]	  = (uint16_t)lcldata16>>8;
+					lcldata16 = 0;
+
+					lcldata16 = STM_Msg_0x201.AnuragPhNo05Dig;
+					msg[4]	  = lcldata16;
+					msg[5]	  = (uint16_t)lcldata16>>8;
+					lcldata16 = 0;
+
+					lcldata16 = STM_Msg_0x201.AnuragID;
+					msg[6]	  = lcldata16;
+					msg[7]	  = (uint16_t)lcldata16>>8;
+					lcldata16 = 0;
+
+					HAL_CAN_AddTxMessage(&hcan, &lclTxHeader, msg, &TxMailbox);
 				break;
 
 				case 3:
+					lclTxHeader.DLC = 8;
+					lclTxHeader.StdId=STM_ID_0x102;
 
+					lcldata64 = STM_Msg_0x102.myPhoneNo;
+					msg[0]	  = lcldata64;
+					msg[1]	  = lcldata64>>8;
+					msg[2]	  = lcldata64>>16;
+					msg[3]	  = lcldata64>>24;
+					msg[4]	  = lcldata64>>32;
+					msg[5]	  = lcldata64>>40;
+					msg[6]	  = lcldata64>>48;
+					msg[7]	  = lcldata64>>56;
+
+					HAL_CAN_AddTxMessage(&hcan, &lclTxHeader, msg, &TxMailbox);
 				break;
 
 				case 4:
@@ -160,7 +197,14 @@ void Handle_CAN_TX(void)
 void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData);
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    if(RxHeader.StdId == STM_ID_0x301)
+    {
+    	STM_Msg_0x301.gfx_Val = RxData[0];
+    	STM_Msg_0x301.gfx_val2= RxData[1];
+    	STM_Msg_0x301.ledDATA1= RxData[2]& 0x01;
+    	STM_Msg_0x301.ledDATA2= RxData[3]& 0x01;
+    }
+
     CAN_MessageReceived = 1;  // Flag set for main loop
 }
 

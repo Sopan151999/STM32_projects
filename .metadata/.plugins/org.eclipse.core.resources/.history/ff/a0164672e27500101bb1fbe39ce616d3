@@ -1,0 +1,201 @@
+/*
+ * Hdl_CAN.c
+ *
+ *  Created on: Aug 5, 2025
+ *      Author: sopan
+ */
+
+
+#include "Hdl_CAN.h"
+
+#include "string.h"
+
+#define RESOL_DATA_TX                   (0.1f)                  /* Resolution for Tx data        */
+
+
+STM_CAN_0x600 STM_Msg_0x600;
+STM_CAN_0x201 STM_Msg_0x201;
+STM_CAN_0x102 STM_Msg_0x102;
+STM_CAN_0x403 STM_Msg_0x403;
+STM_CAN_0x550 STM_Msg_0x550;
+
+
+// Global variables
+CAN_TxHeaderTypeDef TxHeader;
+CAN_RxHeaderTypeDef RxHeader;
+uint8_t TxData[8];
+uint8_t RxData[8];
+uint32_t TxMailbox;
+volatile uint8_t CAN_MessageReceived = 0;
+
+extern CAN_HandleTypeDef hcan;
+
+
+
+
+// === CAN Initialization ===
+void CAN_Init(void)
+{
+
+	CAN_ConfigFilter();
+    HAL_CAN_Start(&hcan);
+    HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
+
+
+}
+
+// === CAN Filter Configuration ===
+void CAN_ConfigFilter(void)
+{
+    CAN_FilterTypeDef filter;
+
+    filter.FilterActivation = CAN_FILTER_ENABLE;
+    filter.FilterBank = 10;
+    filter.FilterFIFOAssignment = CAN_FILTER_FIFO1;
+    filter.FilterIdHigh = 0x0000;
+    filter.FilterIdLow = 0x0000;
+    filter.FilterMaskIdHigh = 0x0000;
+    filter.FilterMaskIdLow = 0x0000;
+    filter.FilterMode = CAN_FILTERMODE_IDMASK;
+    filter.FilterScale = CAN_FILTERSCALE_32BIT;
+    filter.SlaveStartFilterBank = 0;
+
+    HAL_CAN_ConfigFilter(&hcan, &filter);
+}
+
+// === CAN Send Function ===
+HAL_StatusTypeDef CAN_Send(uint16_t StdID, uint8_t* data, uint8_t len)
+{
+    TxHeader.StdId = StdID;
+    TxHeader.IDE = CAN_ID_STD;
+    TxHeader.RTR = CAN_RTR_DATA;
+    TxHeader.DLC = len;
+
+    return HAL_CAN_AddTxMessage(&hcan, &TxHeader, data, &TxMailbox);
+}
+
+
+
+//void Handle_CAN_TX(void){
+//    uint16_t lclmsgLen[15]   ={0x500U,0x501U,0x502U,0x503U,0x580U,0x581U,
+//                             0x588U,0x589U,0x58AU,0x190U,0x191U,0x192U,
+//							 0x193U,0x194U,0x195U};
+//    uint8_t msg[8] = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
+//
+//	for(uint8_t lclCnt=0; lclCnt<lclmsgLen[15]; lclCnt++){
+//
+//        CAN_Send(lclmsgLen[lclCnt], msg, 8);
+//        HAL_Delay(100);
+//
+//	}
+//}
+void Handle_CAN_TX(void)
+{
+	CAN_TxHeaderTypeDef lclTxHeader;
+
+	uint8_t lcldata8t=0;
+	uint16_t lcldata16;
+//	uint32_t lcldata32;
+	uint64_t lcldata64;
+
+    uint8_t msg[8] = {0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88};
+
+    static uint8_t lclCnt = 0;
+	lclTxHeader.IDE = CAN_ID_STD;
+	lclTxHeader.RTR = CAN_RTR_DATA;
+    lclTxHeader.TransmitGlobalTime = DISABLE;
+    lclTxHeader.DLC = 8;  // default 8, can change per message
+    lclCnt++;
+
+		    switch (lclCnt) {
+		        case 1:
+		        	lclTxHeader.StdId = STM_ID_0x600;
+		        	lclTxHeader.DLC = 6;
+		            // Fill from struct STM_CAN_0x600
+		        	lcldata8t = ((STM_Msg_0x600.PA5_led & 0x01)<<0x00)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.PA6_led & 0x01)<<0x01)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.data1   & 0x01)<<0x02)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.data2   & 0x01)<<0x03)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.data3   & 0x01)<<0x04)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.data4   & 0x01)<<0x05)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.data5   & 0x01)<<0x06)|lcldata8t;
+		        	lcldata8t = ((STM_Msg_0x600.data6   & 0x01)<<0x07)|lcldata8t;
+		        	msg[0]    = lcldata8t;
+		        	lcldata8t = 0;
+
+		        	lcldata8t = (float) (STM_Msg_0x600.ADC_data)/0.01;
+					msg[1]    = lcldata8t;
+		        	lcldata8t = 0;
+
+		        	lcldata16 = STM_Msg_0x600.PWM_data;
+		        	msg[2]    = lcldata16;
+		        	msg[3]    = (uint16_t)lcldata16>>8;
+		            lcldata16 = 0;
+
+		        	lcldata16 = STM_Msg_0x600.plm_data;
+		        	msg[4]	  = lcldata16;
+		        	msg[5]    = (uint16_t)lcldata16>>8;
+		        	lcldata16 = 0;
+		        	HAL_CAN_AddTxMessage(&hcan, &lclTxHeader, msg, &TxMailbox);
+		        	//        HAL_Delay(100);
+		        break;
+
+				case 2:
+					lclTxHeader.DLC = 8;
+					lclTxHeader.StdId=STM_ID_0x201;
+
+					msg[0] = STM_Msg_0x201.Anurag_age;
+					msg[1] = STM_Msg_0x201.Anurag_marks;
+
+					lcldata16 = STM_Msg_0x201.AnuragPhNo5Dig;
+					msg[2]	  = lcldata16;
+					msg[3]	  = (uint16_t)lcldata16>>8;
+					lcldata16 = 0;
+
+					lcldata16 = STM_Msg_0x201.AnuragPhNo05Dig;
+					msg[4]	  = lcldata16;
+					msg[5]	  = (uint16_t)lcldata16>>8;
+					lcldata16 = 0;
+
+					lcldata16 = STM_Msg_0x201.AnuragID;
+					msg[6]	  = lcldata16;
+					msg[7]	  = (uint16_t)lcldata16>>8;
+					lcldata16 = 0;
+
+					HAL_CAN_AddTxMessage(&hcan, &lclTxHeader, msg, &TxMailbox);
+				break;
+
+				case 3:
+					lclTxHeader.DLC = 8;
+					lclTxHeader.StdId=STM_ID_0x102;
+
+					lcldata64 = STM_Msg_0x102.myPhoneNo;
+					msg[0]	  = lcldata64;
+					msg[1]	  = lcldata64>>8;
+					msg[2]	  = lcldata64>>16;
+					msg[3]	  = lcldata64>>24;
+					msg[4]	  = lcldata64>>32;
+					msg[5]	  = lcldata64>>40;
+					msg[6]	  = lcldata64>>48;
+					msg[7]	  = lcldata64>>56;
+				break;
+
+				case 4:
+
+				break;
+
+				default:
+				lclCnt = 0;
+				break;
+					}
+ }
+
+
+// === CAN RX Callback ===
+void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+    HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxHeader, RxData);
+    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    CAN_MessageReceived = 1;  // Flag set for main loop
+}
+

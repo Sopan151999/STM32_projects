@@ -1,0 +1,31 @@
+/*
+ * Hdl_GPIO.c
+ *
+ *  Created on: Aug 10, 2025
+ *      Author: sopan
+ */
+
+
+#include "globel_data.h"
+
+extern volatile uint8_t CAN_MessageReceived;
+void Handle_control_IO(void){
+
+    if(CAN_MessageReceived) {
+        	CAN_MessageReceived = 0;
+            if(STM_Msg_0x301.ledDATA1 == 0x01){
+            	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+            }else{
+            	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+            }
+
+            if(STM_Msg_0x301.ledDATA2== 0x01){
+            	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
+            }else{
+            	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
+            }
+
+            // Example: Echo received byte to LED or Serial
+            HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+        }
+}

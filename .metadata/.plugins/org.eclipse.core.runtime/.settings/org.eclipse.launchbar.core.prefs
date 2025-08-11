@@ -14,7 +14,7 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CAN_ONLY1\ Debug/activeLaunchTa
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:CAN_loopback/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F103C6T6A_ADC_1.2\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F103C6T6A_ADC_1.2\ Debug/activeLaunchTarget=null\:---
-org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F103C6T6A_CAN_1.3\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F103C6T6A_CAN_1.3\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F103C6T6A_CAN_1.3\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:STM32F103C6T6A_GPIO\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:TUT_CAN_LOOPBACK\ Debug/activeLaunchMode=debug

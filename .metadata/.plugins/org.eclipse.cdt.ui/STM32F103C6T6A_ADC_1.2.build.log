@@ -1,10 +1,10 @@
-11:13:45 **** Build of configuration Debug for project STM32F103C6T6A_ADC_1.2 ****
+18:14:35 **** Incremental Build of configuration Debug for project STM32F103C6T6A_ADC_1.2 ****
 make -j8 all 
 arm-none-eabi-size  STM32F103C6T6A_ADC_1.2.elf 
    text	   data	    bss	    dec	    hex	filename
-  16172	     12	   1964	  18148	   46e4	STM32F103C6T6A_ADC_1.2.elf
+  32308	    108	   3260	  35676	   8b5c	STM32F103C6T6A_ADC_1.2.elf
 Finished building: default.size.stdout
  
 
-11:13:46 Build Finished. 0 errors, 0 warnings. (took 854ms)
+18:14:35 Build Finished. 0 errors, 0 warnings. (took 418ms)
 

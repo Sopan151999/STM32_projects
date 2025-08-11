@@ -68,22 +68,22 @@ void ApplicationControl(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-CAN_RxHeaderTypeDef RxHeader;
-CAN_TxHeaderTypeDef TxHeader;
-
-uint32_t TxMailBox;
-
-uint8_t TxData[8];
-uint8_t RxData[8];
-volatile uint8_t recivedbyte;
-
-void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan){
-	HAL_CAN_GetRxMessage(hcan,CAN_RX_FIFO1, &RxHeader, RxData);
-	if(RxHeader.StdId==0x500){
-		recivedbyte=RxData[0];
-	}
-
-}
+//CAN_RxHeaderTypeDef RxHeader;
+//CAN_TxHeaderTypeDef TxHeader;
+//
+//uint32_t TxMailBox;
+//
+//uint8_t TxData[8];
+//uint8_t RxData[8];
+//volatile uint8_t recivedbyte;
+//
+//void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan){
+//	HAL_CAN_GetRxMessage(hcan,CAN_RX_FIFO1, &RxHeader, RxData);
+//	if(RxHeader.StdId==0x500){
+//		recivedbyte=RxData[0];
+//	}
+//
+//}
 
 
 
@@ -124,27 +124,27 @@ int main(void)
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_CAN_Start(&hcan);
-
-  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
-
-
-
-  TxHeader.IDE = CAN_ID_STD;
-  TxHeader.StdId = 0x103;
-  TxHeader.RTR = CAN_RTR_DATA;
-  TxHeader.DLC = 8;
-
-  TxData[0] = 50;
-  TxData[1] = 0xAA;
-  TxData[2] = 50;
-  TxData[3] = 0xAA;
-  TxData[4] = 50;
-  TxData[5] = 0xAA;
-  TxData[6] = 50;
-  TxData[7] = 0xAA;
-  HAL_CAN_AddTxMessage(&hcan,&TxHeader, TxData, &TxMailBox);
-//  ApplicationControl();
+//  HAL_CAN_Start(&hcan);
+//
+//  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO1_MSG_PENDING);
+//
+//
+//
+//  TxHeader.IDE = CAN_ID_STD;
+//  TxHeader.StdId = 0x103;
+//  TxHeader.RTR = CAN_RTR_DATA;
+//  TxHeader.DLC = 8;
+//
+//  TxData[0] = 50;
+//  TxData[1] = 0xAA;
+//  TxData[2] = 50;
+//  TxData[3] = 0xAA;
+//  TxData[4] = 50;
+//  TxData[5] = 0xAA;
+//  TxData[6] = 50;
+//  TxData[7] = 0xAA;
+//  HAL_CAN_AddTxMessage(&hcan,&TxHeader, TxData, &TxMailBox);
+  ApplicationControl();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -154,11 +154,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_CAN_AddTxMessage(&hcan,&TxHeader, TxData, &TxMailBox);
-
-	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-	  TxData[0]=recivedbyte;
-	  HAL_Delay(100);
+//	  HAL_CAN_AddTxMessage(&hcan,&TxHeader, TxData, &TxMailBox);
+//
+//	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//	  TxData[0]=recivedbyte;
+//	  HAL_Delay(100);
 //	  __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3,499);
   }
   /* USER CODE END 3 */
@@ -289,20 +289,20 @@ static void MX_CAN_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN CAN_Init 2 */
-  CAN_FilterTypeDef canfilterconfig;
-
-  canfilterconfig.FilterActivation = CAN_FILTER_ENABLE;
-  canfilterconfig.FilterBank = 10;  // which filter bank to use from the assigned ones
-  canfilterconfig.FilterFIFOAssignment = CAN_FILTER_FIFO1;
-  canfilterconfig.FilterIdHigh = 0;
-  canfilterconfig.FilterIdLow = 0;
-  canfilterconfig.FilterMaskIdHigh = 0;
-  canfilterconfig.FilterMaskIdLow = 0x0000;
-  canfilterconfig.FilterMode = CAN_FILTERMODE_IDMASK;
-  canfilterconfig.FilterScale = CAN_FILTERSCALE_32BIT;
-  canfilterconfig.SlaveStartFilterBank = 0;  // how many filters to assign to the CAN1 (master can)
-
-  HAL_CAN_ConfigFilter(&hcan, &canfilterconfig);
+//  CAN_FilterTypeDef canfilterconfig;
+//
+//  canfilterconfig.FilterActivation = CAN_FILTER_ENABLE;
+//  canfilterconfig.FilterBank = 10;  // which filter bank to use from the assigned ones
+//  canfilterconfig.FilterFIFOAssignment = CAN_FILTER_FIFO1;
+//  canfilterconfig.FilterIdHigh = 0;
+//  canfilterconfig.FilterIdLow = 0;
+//  canfilterconfig.FilterMaskIdHigh = 0;
+//  canfilterconfig.FilterMaskIdLow = 0x0000;
+//  canfilterconfig.FilterMode = CAN_FILTERMODE_IDMASK;
+//  canfilterconfig.FilterScale = CAN_FILTERSCALE_32BIT;
+//  canfilterconfig.SlaveStartFilterBank = 0;  // how many filters to assign to the CAN1 (master can)
+//
+//  HAL_CAN_ConfigFilter(&hcan, &canfilterconfig);
   /* USER CODE END CAN_Init 2 */
 
 }

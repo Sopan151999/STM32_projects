@@ -8,6 +8,10 @@
 #ifndef INC_GLOBEL_DATA_H_
 #define INC_GLOBEL_DATA_H_
 
+#include "stm32f1xx_hal.h"
+#include "Hdl_CAN.h"
+#include "SSD_1306.h"
+#include "Hdl_gpio.h"
 
 typedef struct {
 	uint8_t PA5_led : 1;
@@ -32,8 +36,8 @@ typedef struct {
 	uint16_t AnuragPhNo5Dig;
 	uint16_t AnuragPhNo05Dig;
 	uint16_t AnuragID;
-}STM_CAN_0x801;
-extern STM_CAN_0x801 STM_Msg_0x801;
+}STM_CAN_0x201;
+extern STM_CAN_0x201 STM_Msg_0x201;
 
 
 
@@ -54,8 +58,17 @@ typedef struct {
 }STM_CAN_0x550;
 extern STM_CAN_0x550 STM_Msg_0x550;
 
-//#define STM_ID_0x561 0x561U
+typedef struct {
+	uint8_t gfx_Val;
+	uint8_t gfx_val2;
+	volatile uint8_t ledDATA1 :1;
+	volatile uint8_t ledDATA2 :1;
+
+}STM_CAN_0x301;
+extern STM_CAN_0x301 STM_Msg_0x301;
+
 //#define STM_ID_0x588 0x588U
 //#define STM_ID_0x589 0x589U
 //#define STM_ID_0x581 0x581U
+
 #endif /* INC_GLOBEL_DATA_H_ */

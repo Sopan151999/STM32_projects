@@ -1,0 +1,35 @@
+[33mcommit 76d72c4f573a43d589c25cb22a03736ceb328e4b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: SOPAN DHAYE <sopansd.a99@gmail.com>
+Date:   Sun Aug 10 14:35:40 2025 +0530
+
+    update
+
+[33mcommit a577858775acb43c509abc24d2707c0857bccbd2[m
+Author: SOPAN DHAYE <sopansd.a99@gmail.com>
+Date:   Sun Aug 3 01:11:55 2025 +0530
+
+    Describe what changed
+
+[33mcommit 676a06792d16764ab86a2cfe8f358cefbd43630b[m
+Author: SOPAN DHAYE <sopansd.a99@gmail.com>
+Date:   Sat Aug 2 01:39:32 2025 +0530
+
+    Renamed file for better organization
+
+[33mcommit 4a33d56b6b06453a079a948e8e3ae47ce19a1e9f[m
+Author: SOPAN DHAYE <sopansd.a99@gmail.com>
+Date:   Sat Aug 2 01:23:38 2025 +0530
+
+    Describe what changed
+
+[33mcommit 6925bd0577e7442afe8e7b60022cd1d5cc75f8f2[m
+Author: SOPAN DHAYE <sopansd.a99@gmail.com>
+Date:   Sat Aug 2 01:14:17 2025 +0530
+
+    Add new STM32 project
+
+[33mcommit 84afadc7fecc8db116ff8048676a2981a078e853[m
+Author: SOPAN DHAYE <sopansd.a99@gmail.com>
+Date:   Tue Jul 29 22:35:17 2025 +0530
+
+    add STM project to repo

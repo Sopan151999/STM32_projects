@@ -1,5 +1,5 @@
 Core/Src/ApplicationControl.o: ../Core/Src/ApplicationControl.c \
- ../Core/Inc/Hdl_CAN.h \
+ ../Core/Inc/globel_data.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -22,9 +22,11 @@ Core/Src/ApplicationControl.o: ../Core/Src/ApplicationControl.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Core/Inc/globel_data.h
-../Core/Inc/Hdl_CAN.h:
+ ../Core/Inc/Hdl_CAN.h ../Core/Inc/globel_data.h ../Core/Inc/SSD_1306.h \
+ ../Core/Inc/fonts.h ../Core/Inc/Hdl_gpio.h
+../Core/Inc/globel_data.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
@@ -47,5 +49,10 @@ Core/Src/ApplicationControl.o: ../Core/Src/ApplicationControl.c \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
+../Core/Inc/Hdl_CAN.h:
 ../Core/Inc/globel_data.h:
+../Core/Inc/SSD_1306.h:
+../Core/Inc/fonts.h:
+../Core/Inc/Hdl_gpio.h:
